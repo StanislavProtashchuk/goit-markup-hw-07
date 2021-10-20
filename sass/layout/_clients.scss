@@ -1,60 +1,57 @@
-.clients-title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  justify-content: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.clients-list {
+.clients {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.clients-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  &__title {
+    margin-bottom: 50px;
 
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--accent-color);
-}
+    @include font-style($weight: 700, $size: 36px, $height: 42px);
 
-.clients-link:hover .clients-logo,
-.clients-link:focus .clients-logo {
-  fill: var(--accent-color);
-}
+    text-align: center;
+  }
 
-.clients-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__item + &__item {
+    margin-left: 30px;
+  }
 
-.clients-item + .clients-item {
-  margin-left: 30px;
-}
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $logo;
+    border-radius: 4px;
 
-.clients-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 106px;
-  height: 60px;
+    transition: border-color $animation;
+  }
 
-  fill: #afb1b8;
+  &__link:hover,
+  &__link:focus {
+    border-color: $accent;
+  }
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 106px;
+    height: 60px;
+
+    fill: $logo;
+
+    transition: fill $animation;
+  }
+
+  &__link:hover &__logo,
+  &__link:focus &__logo {
+    fill: $accent;
+  }
 }

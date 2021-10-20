@@ -4,9 +4,9 @@
   padding-bottom: 25px;
 
   font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+
+  @include font-style($weight: 700, $size: 26px, $height: 31px);
+
   color: $accent;
 
   &__header {

@@ -16,10 +16,8 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
+    @include font-style($weight: 500, $size: 14px, $spacing: 0.02em);
+
     color: $black;
 
     transition: color $animation;

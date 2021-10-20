@@ -1,6 +1,7 @@
-@import "./utils/vars";
 @import "./base/reset";
 @import "./base/common";
+@import "./utils/vars";
+@import "./utils/mixin";
 @import "./utils/hidden";
 @import "./components/container";
 @import "./components/btn";
@@ -8,6 +9,7 @@
 @import "./components/logo";
 @import "./components/navigation";
 @import "./components/social-links";
+@import "./components/filter";
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/fitures";
@@ -15,3 +17,5 @@
 @import "./layout/team";
 @import "./layout/clients";
 @import "./layout/footer";
+@import "./layout/modal";
+@import "./layout/card";

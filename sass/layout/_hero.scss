@@ -12,18 +12,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
 
-.hero__title {
-  max-width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+  &__title {
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
-  letter-spacing: 0.06em;
-  color: $white;
-  text-transform: uppercase;
+    @include font-style(
+      $weight: 900,
+      $size: 44px,
+      $height: 60px,
+      $spacing: 0.06em
+    );
+
+    color: $white;
+    text-transform: uppercase;
+  }
 }

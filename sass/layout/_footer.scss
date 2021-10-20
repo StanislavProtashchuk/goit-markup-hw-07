@@ -1,58 +1,53 @@
-footer {
+.footer {
   background-color: #2f303a;
   padding: 60px 0;
-}
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
 
-.footer-adress {
-  display: flex;
-  flex-direction: column;
-  width: 231px;
-  margin-right: 70px;
-}
+  &__adress {
+    display: flex;
+    flex-direction: column;
+    width: 231px;
+    margin-right: 70px;
+  }
 
-.footer-navigation-contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  &__contact {
+    @include font-style($weight: 500, $size: 16px, $spacing: 0.02em);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    color: $grey;
 
-.footer-navigation-contact:hover,
-.footer-navigation-contact:focus {
-  color: var(--accent-color);
-}
+    transition: color $animation;
+  }
 
-.footer-item {
-  display: block;
-  margin-bottom: 9px;
-}
+  &__contact:hover,
+  &__contact:focus {
+    color: $accent;
+  }
 
-.footer-item:last-child {
-  margin-bottom: 0;
+  &__item {
+    display: block;
+    margin-bottom: 9px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .adress {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  @include font-style($size: 14px, $height: 24px);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $white;
+
+  transition: color $animation;
 }
 
 .adress:hover,
 .adress:focus {
-  color: var(--accent-color);
+  color: $accent;
 }
 
 .footer-social {
@@ -61,7 +56,7 @@ footer {
   margin-right: 93px;
 }
 
-.social-title {
+.social__title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,20 +64,15 @@ footer {
 
   width: 145px;
   height: 16px;
-  left: 516px;
-  top: 2751px;
 
-  color: var(--primary-title-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
+  color: $white;
+
+  @include font-style($weight: 700, $size: 14px);
+
   text-transform: uppercase;
 }
 
-.footer-social-link {
+.footer-social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,55 +82,47 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $animation;
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-color);
+.footer-social__link:hover,
+.footer-social__link:focus {
+  background-color: $accent;
   border-radius: 50%;
 }
 
-.footer-social-icon {
+.footer-social__icon {
   width: 20px;
   height: 20px;
-  fill: var(--primary-title-color);
+  fill: $white;
 }
 
-.footer-label {
+.footer__label {
   display: block;
 
   margin-bottom: 20px;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
+  @include font-style($weight: 700, $size: 14px);
+
   text-transform: uppercase;
 
-  color: var(--primary-title-color);
+  color: $white;
 }
 
-.footer-mail-container {
+.footer-mail__container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer-input {
+.footer__input {
   width: 358px;
   height: 50px;
-  left: 815px;
-  top: 2787px;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  color: var(--primary-title-color);
+  @include font-style($height: 20px);
+
+  color: $white;
+
   padding-left: 16px;
   padding-right: 16px;
 
@@ -151,15 +133,11 @@ footer {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border $animation;
 }
 
 input::placeholder {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: calc(20 / 16);
+  @include font-style($height: 20px);
 
   display: flex;
   align-items: center;
@@ -168,12 +146,12 @@ input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-input:hover,
-.footer-input:focus {
-  border: 1px solid var(--accent-color);
+.footer__input:hover,
+.footer__input:focus {
+  border: 1px solid $accent;
 }
 
-.submit-btn {
+.footer__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,21 +159,8 @@ input::placeholder {
   margin-left: 12px;
 }
 
-.submit-btn-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-
-  letter-spacing: 0.06em;
-
-  color: var(--primary-title-color);
-
-  margin-right: 10px;
-}
-
-.submit-icon {
+.submit__icon {
+  margin-left: 10px;
   width: 24px;
   height: 24px;
 }

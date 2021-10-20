@@ -1,39 +1,39 @@
-.social-list {
+.social {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  &__item + &__item {
+    margin-left: 10px;
+  }
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
 
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
-  border-radius: 50%;
-}
+    transition: background-color $animation;
+  }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: var(--primary-title-color);
-}
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent;
+    border-radius: 50%;
+  }
 
-.social-item + .social-item {
-  margin-left: 10px;
-}
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $logo;
 
-.social-icon {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
+    transition: fill $animation;
+  }
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: $white;
+  }
 }
