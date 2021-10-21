@@ -8,6 +8,15 @@ li {
   padding: 0px;
 }
 
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
 li {
   list-style: none;
 }
@@ -21,15 +30,6 @@ img {
 body {
   font-family: "roboto", sans-serif;
   letter-spacing: 0.03em;
-}
-
-.link {
-  text-decoration: none;
-  font-style: normal;
-}
-
-.list {
-  list-style: none;
 }
 
 .visually-hidden {
