@@ -1,16 +1,8 @@
-.team {
+.section--background {
   background-color: $background;
 }
 
-.team__title {
-  margin-bottom: 50px;
-
-  @include font-style($weight: 700, $size: 36px, $height: 42px);
-
-  text-align: center;
-}
-
-.team__list {
+.team {
   display: flex;
   flex-wrap: wrap;
 }
@@ -27,11 +19,11 @@
   }
 }
 
-.people {
+.team__wrapper {
   padding: 30px 0;
 }
 
-.people__name {
+.team__name {
   margin-bottom: 10px;
 
   @include font-style($weight: 500, $height: 19px);
@@ -41,7 +33,7 @@
   color: $black;
 }
 
-.people__description {
+.team__description {
   margin-bottom: 16px;
 
   @include font-style($height: 19px);
