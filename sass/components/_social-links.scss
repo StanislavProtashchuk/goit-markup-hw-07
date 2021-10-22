@@ -2,38 +2,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  &__item + &__item {
-    margin-left: 10px;
-  }
+.social__item + .social__item {
+  margin-left: 10px;
+}
 
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 
-    transition: background-color $animation;
-  }
+  transition: background-color $animation;
 
-  &__link:hover,
-  &__link:focus {
+  &:hover,
+  &:focus {
     background-color: $accent;
     border-radius: 50%;
   }
+}
 
-  &__icon {
-    width: 20px;
-    height: 20px;
-    fill: $logo;
+.social__icon {
+  width: 20px;
+  height: 20px;
+  fill: $logo;
 
-    transition: fill $animation;
-  }
+  transition: fill $animation;
+}
 
-  &__link:hover &__icon,
-  &__link:focus &__icon {
-    fill: $white;
-  }
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: $white;
 }
