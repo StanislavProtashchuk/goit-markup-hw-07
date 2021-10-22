@@ -1,38 +1,38 @@
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+}
 
-  &__container {
-    display: flex;
-    align-items: baseline;
-  }
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
 
-  &__adress {
-    display: flex;
-    flex-direction: column;
-    width: 231px;
-    margin-right: 70px;
-  }
+.footer__adress {
+  display: flex;
+  flex-direction: column;
+  width: 231px;
+  margin-right: 70px;
+}
 
-  &__contact {
-    @include font-style($weight: 500, $size: 16px, $spacing: 0.02em);
+.footer__contact {
+  @include font-style($weight: 500, $size: 16px, $spacing: 0.02em);
 
-    color: $grey;
+  color: $grey;
 
-    transition: color $animation;
-  }
+  transition: color $animation;
 
-  &__contact:hover,
-  &__contact:focus {
+  &:hover,
+  &:focus {
     color: $accent;
   }
+}
 
-  &__item {
-    display: block;
-    margin-bottom: 9px;
-  }
+.footer__item {
+  display: block;
+  margin-bottom: 9px;
 
-  &__item:last-child {
+  &:last-child {
     margin-bottom: 0;
   }
 }
@@ -43,11 +43,11 @@
   color: $white;
 
   transition: color $animation;
-}
 
-.adress:hover,
-.adress:focus {
-  color: $accent;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
 
 .footer-social {
@@ -83,12 +83,12 @@
   border-radius: 50%;
 
   transition: background-color $animation;
-}
 
-.footer-social__link:hover,
-.footer-social__link:focus {
-  background-color: $accent;
-  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: $accent;
+    border-radius: 50%;
+  }
 }
 
 .footer-social__icon {

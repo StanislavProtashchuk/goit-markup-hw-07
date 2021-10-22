@@ -122,11 +122,11 @@
 
   outline: none;
   transition: border $animation;
-}
 
-.modal__form--input:hover,
-.modal__form--input:focus {
-  border: 1px solid $accent;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent;
+  }
 }
 
 .modal__form--input:hover + .input-icon,
@@ -156,11 +156,11 @@
 
   outline: none;
   transition: border $animation;
-}
 
-.modal__comment:hover,
-.modal__comment:focus {
-  border: 1px solid $accent;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent;
+  }
 }
 
 .modal__comment:placeholder {

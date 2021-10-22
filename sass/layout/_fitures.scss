@@ -1,38 +1,38 @@
 .fitures {
   display: flex;
+}
 
-  &__item {
-    width: 270px;
-    margin-right: 30px;
-  }
+.fitures__item {
+  width: 270px;
+  margin-right: 30px;
 
-  &__item:nth-child(4n) {
+  &:nth-child(4n) {
     margin-right: 0;
   }
+}
 
-  &__icon {
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: $background;
+.fitures__icon {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $background;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  &__title {
-    margin-bottom: 10px;
+.fitures__title {
+  margin-bottom: 10px;
 
-    @include font-style($weight: 700, $size: 14px);
+  @include font-style($weight: 700, $size: 14px);
 
-    text-transform: uppercase;
-    color: $black;
-  }
+  text-transform: uppercase;
+  color: $black;
+}
 
-  &__description {
-    @include font-style($size: 14px, $height: 24px);
+.fitures__description {
+  @include font-style($size: 14px, $height: 24px);
 
-    color: $grey;
-  }
+  color: $grey;
 }
