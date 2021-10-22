@@ -6,3 +6,7 @@ body {
 a {
   outline-color: #2196f3;
 }
+
+.flex {
+  @include flex;
+}

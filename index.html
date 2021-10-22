@@ -18,22 +18,22 @@
   <!------------------------------------------------------------Шапка сайта-------------------------------------------------------------------->
   <header class="header">
     <div class="container header__container">
-    <nav class="navigation" >
-      <a class="logo" href="./index.html"> Web<span class="logo__header">Studio</span></a>
-      <ul class="header__list">
+    <nav class="flex" >
+      <a class="logo" href="./index.html"> Web<span class="logo--header">Studio</span></a>
+      <ul class="navigation">
         <li class="navigation__item" ><a class="navigation__link current" href="./index.html">Студия</a></li>
         <li class="navigation__item" ><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
         <li class="navigation__item" ><a class="navigation__link" href="">Контакты</a></li>
       </ul>
     </nav>
-    <ul class="header__list">
-      <li class="contact__item" ><a class="contact" href="mailto:info@devstudio.com">
-        <svg class="contact__item--icon" width="16" height="12">
+    <ul class="contact">
+      <li class="contact__item" ><a class="contact__link" href="mailto:info@devstudio.com">
+        <svg class="contact__icon" width="16" height="12">
           <use href="./images/sprite.svg#icon-mail"></use>
         </svg>
       info@devstudio.com</a></li>
-      <li class="contact__item" ><a class="contact" href="tel:+380961111111">
-        <svg class="contact__item--icon" width="10" height="16">
+      <li class="contact__item" ><a class="contact__link" href="tel:+380961111111">
+        <svg class="contact__icon" width="10" height="16">
           <use href="./images/sprite.svg#icon-smartphone"></use>
         </svg>
         +38 096 111 11 11</a></li>
@@ -54,7 +54,7 @@
       <h2 class="visually-hidden">Наши преимущества</h2>
             <ul class="fitures">
           <li class="fitures__item" >
-            <div class="fitures__icon">
+            <div class="fitures__wrapper">
             <svg width="65.32" height="70";>
               <use href="./images/sprite.svg#icon-antenna"></use>
             </svg>
@@ -66,7 +66,7 @@
           </p>
           </li>
         <li class="fitures__item" >
-          <div class="fitures__icon">
+          <div class="fitures__wrapper">
             <svg width="66.96" height="70" ;>
               <use href="./images/sprite.svg#icon-clock"></use>
             </svg>
@@ -78,7 +78,7 @@
           </p>
         </li>
         <li class="fitures__item" >
-          <div class="fitures__icon">
+          <div class="fitures__wrapper">
             <svg width="70" height="70" ;>
               <use href="./images/sprite.svg#icon-diagram"></use>
             </svg>
@@ -90,7 +90,7 @@
           </p>
         </li>
         <li class="fitures__item" >
-          <div class="fitures__icon">
+          <div class="fitures__wrapper">
             <svg width="70" height="70" ;>
               <use href="./images/sprite.svg#icon-astronaut"></use>
             </svg>
@@ -105,21 +105,21 @@
       </div>
     </section>
     <!---------------------------------------------------Чем мы занимаемся------------------------------------------------------------------------->
-    <section class="works section" >
+    <section class="section section--no-padding-top" >
       <div class="container">
-      <h2 class="works__title">Чем мы занимаемся</h2>
-      <ul class="works__list">
+      <h2 class="section__title">Чем мы занимаемся</h2>
+      <ul class="works">
         <li class="works__item" >
           <a href=""><img src="./images/box1.jpg" width="370" alt="Делаем верстку сайтов" /></a>
-          <h3 class="works__item--title">десктопные приложения</h3>
+          <h3 class="works__title">десктопные приложения</h3>
         </li>
         <li class="works__item" >
           <a href=""><img src="./images/box2.jpg" width="370" alt="Адаптируем сайты под мобильные устройства" /></a>
-          <h3 class="works__item--title">мобильные приложения</h3>
+          <h3 class="works__title">мобильные приложения</h3>
         </li>
         <li class="works__item" >
           <a href=""><img src="./images/box3.jpg" width="370" alt="Делаем индивидуальный дизайн сайтов" /></a>
-          <h3 class="works__item--title">Дизайнерские решения</h3>
+          <h3 class="works__title">Дизайнерские решения</h3>
         </li>
       </ul>
       </div>

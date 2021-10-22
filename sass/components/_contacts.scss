@@ -1,5 +1,10 @@
 .contact {
   display: flex;
+  margin-left: auto;
+}
+
+.contact__link {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
@@ -23,13 +28,13 @@
     margin-right: 50px;
   }
 
-  .contact__item--icon {
+  .contact__icon {
     fill: currentColor;
     margin-right: 10px;
   }
 
-  .contact:hover .contact__item--icon,
-  .contact:focus .contact__item--icon {
+  .contact:hover .contact__icon,
+  .contact:focus .contact__icon {
     color: $accent;
     fill: $accent;
   }

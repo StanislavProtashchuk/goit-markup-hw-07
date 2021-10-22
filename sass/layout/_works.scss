@@ -1,16 +1,4 @@
 .works {
-  padding-top: 0;
-}
-
-.works__title {
-  margin-bottom: 50px;
-
-  @include font-style($weight: 700, $size: 36px, $height: 42px);
-
-  text-align: center;
-}
-
-.works__list {
   display: flex;
 }
 
@@ -23,7 +11,7 @@
   }
 }
 
-.works__item--title {
+.works__title {
   width: 370px;
   background: rgba(47, 48, 58, 0.8);
   padding: 27px;

@@ -4,3 +4,8 @@
   line-height: $height/$size;
   letter-spacing: $spacing;
 }
+
+@mixin flex($display: flex, $align-items: center) {
+  display: $display;
+  align-items: $align-items;
+}
