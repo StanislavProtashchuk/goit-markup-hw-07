@@ -384,45 +384,45 @@
 
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button type="button" class="close-btn" data-modal-close>
-      <svg class="close-btn__img">
+    <button type="button" class="modal__close-btn" data-modal-close>
+      <svg class="modal__close-btn--icon">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
     <form action="#" >
-      <div class="modal__form">
-        <label for="user-name" class="modal__form--label">Имя</label>
+      <div class="modal-form">
+        <label for="user-name" class="modal-form__label">Имя</label>
         <span class="input">
-          <input type="text" name="user-name" id="user-name" class="modal__form--input">
-          <svg class="input-icon" width="18px" height="18px" >
+          <input type="text" name="user-name" id="user-name" class="modal-form__input">
+          <svg class="modal-form__input--icon" width="18px" height="18px" >
             <use href="./images/sprite.svg#icon-person-form"></use>
           </svg>
         
         </span>
       </div>
-      <div class="modal__form">
-        <label for="phone-number" class="modal__form--label">Телефон</label>
+      <div class="modal-form">
+        <label for="phone-number" class="modal-form__label">Телефон</label>
         <span class="input">
-          <input type="tel" name="phone-number" id="phone-number" class="modal__form--input">
-          <svg class="input-icon" width="18px" height="18px">
+          <input type="tel" name="phone-number" id="phone-number" class="modal-form__input">
+          <svg class="modal-form__input--icon" width="18px" height="18px">
             <use href="./images/sprite.svg#icon-phone-form"></use>
           </svg>          
         </span>
       </div>
-      <div class="modal__form">
-        <label for="email" class="modal__form--label">Почта</label>
+      <div class="modal-form">
+        <label for="email" class="modal-form__label">Почта</label>
         <span class="input">
-          <input type="email" name="email" id="email" class="modal__form--input">
-          <svg class="input-icon" width="18px" height="18px">
+          <input type="email" name="email" id="email" class="modal-form__input">
+          <svg class="modal-form__input--icon" width="18px" height="18px">
             <use href="./images/sprite.svg#icon-email-form"></use>
           </svg>
           
         </span>
       </div>
-      <div class="modal__form--comment">
-        <label for="comment" class="modal__form--label">Комментарий</label>
-        <textarea name="comment" id="comment" rows="10" class="modal__comment" placeholder="Введите текст"></textarea>
+      <div class="modal-form__comment">
+        <label for="comment" class="modal-form__label">Комментарий</label>
+        <textarea name="comment" id="comment" rows="10" class="modal-form__comment--text" placeholder="Введите текст"></textarea>
       </div>
       <input type="checkbox" id="modal-checkbox" class="modal__checkbox--input visually-hidden">
       <label for="modal-checkbox" class="modal__checkbox">
@@ -431,8 +431,8 @@
           <use href="./images/sprite.svg#icon-Submit"></use>
         </svg>
       </span>
-      Соглашаюсь с рассылкой и принимаю <a href="" class="modal__checkbox--link">Условия договора</a> </label>
-      <button type="submit" class="button modal-btn">Отправить</button>
+      Соглашаюсь с рассылкой и принимаю <a href="" class="modal-checkbox__link">Условия договора</a> </label>
+      <button type="submit" class="button modal__button">Отправить</button>
     </form>
   </div>
 </div>
