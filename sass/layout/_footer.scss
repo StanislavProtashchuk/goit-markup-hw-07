@@ -8,7 +8,7 @@
   align-items: baseline;
 }
 
-.footer__adress {
+.adress__wrapper {
   display: flex;
   flex-direction: column;
   width: 231px;
@@ -28,7 +28,7 @@
   }
 }
 
-.footer__item {
+.adress__item {
   display: block;
   margin-bottom: 9px;
 
@@ -37,7 +37,7 @@
   }
 }
 
-.adress {
+.adress__link {
   @include font-style($size: 14px, $height: 24px);
 
   color: $white;
@@ -50,7 +50,7 @@
   }
 }
 
-.footer-social {
+.social__wrapper {
   display: flex;
   flex-direction: column;
   margin-right: 93px;
@@ -72,7 +72,7 @@
   text-transform: uppercase;
 }
 
-.footer-social__link {
+.social__link--footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,13 +91,13 @@
   }
 }
 
-.footer-social__icon {
+.social__icon--footer {
   width: 20px;
   height: 20px;
   fill: $white;
 }
 
-.footer__label {
+.footer-label {
   display: block;
 
   margin-bottom: 20px;
@@ -109,13 +109,13 @@
   color: $white;
 }
 
-.footer-mail__container {
+.footer-label__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer__input {
+.footer-label__input {
   width: 358px;
   height: 50px;
 
@@ -146,12 +146,12 @@ input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__input:hover,
-.footer__input:focus {
+.footer-label__input:hover,
+.footer-label__input:focus {
   border: 1px solid $accent;
 }
 
-.footer__button {
+.footer-label__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +159,7 @@ input::placeholder {
   margin-left: 12px;
 }
 
-.submit__icon {
+.footer-label__button--icon {
   margin-left: 10px;
   width: 24px;
   height: 24px;
