@@ -14,22 +14,22 @@
   &:focus {
     color: $accent;
   }
+}
 
-  &__item {
-    display: inline-block;
-  }
+.contact__item {
+  display: inline-block;
 
-  &__item:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 50px;
   }
 
-  &__item--icon {
+  .contact__item--icon {
     fill: currentColor;
     margin-right: 10px;
   }
 
-  &:hover &__item--icon,
-  &:focus &__item--icon {
+  .contact:hover .contact__item--icon,
+  .contact:focus .contact__item--icon {
     color: $accent;
     fill: $accent;
   }

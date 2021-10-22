@@ -32,6 +32,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+a {
+  outline-color: #2196f3;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -95,13 +99,13 @@ body {
   margin-right: 50px;
 }
 
-.contact__item--icon {
+.contact__item .contact__item--icon {
   fill: currentColor;
   margin-right: 10px;
 }
 
-.contact:hover .contact__item--icon,
-.contact:focus .contact__item--icon {
+.contact__item .contact:hover .contact__item--icon,
+.contact__item .contact:focus .contact__item--icon {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -241,7 +245,7 @@ body {
   margin-right: 8px;
 }
 
-.filter__item:nth-child(5n) {
+.filter__item__item:nth-child(5n) {
   margin-right: 0px;
 }
 
