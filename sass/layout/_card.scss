@@ -1,13 +1,9 @@
-.card {
-  padding: 20px 24px;
-}
-
-.card__container {
+.portfolio {
   display: flex;
   flex-wrap: wrap;
 }
 
-.card__item {
+.portfolio__item {
   display: flex;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -22,7 +18,7 @@
   }
 }
 
-.card__link {
+.portfolio__link {
   display: flex;
   flex-direction: column;
   width: 370px;
@@ -39,7 +35,11 @@
   }
 }
 
-.card__title {
+.portfolio__wrapper {
+  padding: 20px 24px;
+}
+
+.portfolio__title {
   margin-bottom: 4px;
 
   @include font-style(
@@ -52,18 +52,18 @@
   color: $black;
 }
 
-.card__title--description {
+.portfolio__title--description {
   @include font-style($height: 30px);
 
   color: $grey;
 }
 
-.card__hidden {
+.portfolio__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.card__hidden--description {
+.portfolio__overlay--description {
   position: absolute;
 
   background: rgba(33, 150, 243, 0.9);
@@ -77,7 +77,7 @@
   transition: transform $animation;
 }
 
-.card__link:hover .card__hidden--description,
-.card__link:focus .card__hidden--description {
+.portfolio__link:hover .portfolio__overlay--description,
+.portfolio__link:focus .portfolio__overlay--description {
   transform: translateY(-100%);
 }
